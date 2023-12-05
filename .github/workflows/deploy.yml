@@ -27,6 +27,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ssh-key: ${{ secrets.DEPLOY_KEY }}
         BRANCH: gh-pages  # GitHub Pages branch
         FOLDER: src        # Source code folder
